@@ -1,0 +1,110 @@
+* {
+box-sizing: border-box; margin: 0;
+padding: 0;
+ 
+font-family: Arial, sans-serif;
+}
+
+body {
+background-color: #f2f2f2; color: #333;
+}
+
+body.dark-theme { background-color: #121212; color: #f1f1f1;
+}
+
+header {
+background: #0066cc; color: white;
+padding: 15px 20px;
+}
+
+header h1 {
+margin-bottom: 10px;
+}
+
+nav a {
+color: white; margin-right: 15px;
+text-decoration: none; padding: 5px 10px; border-radius: 4px;
+}
+
+nav a.active, nav a:hover {
+background: #004c99;
+}
+
+main {
+padding: 20px;
+}
+
+.card {
+background: white; padding: 20px; border-radius: 8px; max-width: 800px; margin: 0 auto;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.dark-theme .card { background: #1f1f1f;
+}
+
+.resume-layout { display: flex;
+ 
+gap: 20px;
+max-width: 1000px; margin: 0 auto;
+}
+
+.resume-layout .left { flex: 1; background: white; padding: 20px; border-radius: 8px;
+}
+
+.resume-layout .right { flex: 2;
+background: white; padding: 20px; border-radius: 8px;
+}
+
+body.dark-theme .resume-layout .left, body.dark-theme .resume-layout .right { background: #1f1f1f;
+}
+
+.profile-pic { width: 150px;
+border-radius: 50%; display: block; margin-bottom: 15px;
+}
+
+h2, h3 {
+margin-top: 15px; margin-bottom: 10px;
+}
+
+ul {
+margin-left: 20px; margin-top: 5px;
+}
+
+.biodata-table { width: 100%;
+border-collapse: collapse; margin-top: 10px;
+}
+
+.biodata-table th,
+.biodata-table td { border: 1px solid #ccc; padding: 8px 10px; text-align: left;
+}
+
+.biodata-table th {
+ 
+width: 30%; background: #e6f2ff;
+}
+
+.sign {
+margin-top: 20px;
+}
+
+footer {
+text-align: center; padding: 15px;
+}
+
+button {
+padding: 8px 16px; border: none; background: #0066cc; color: white;
+border-radius: 4px; cursor: pointer;
+}
+
+button:hover { background: #004c99;
+}
+
+.back-top-btn { margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.resume-layout {
+flex-direction: column;
+}
+}
